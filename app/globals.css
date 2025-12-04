@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Fade In Animation */
+/* FLOATING (CARD NAIK TURUN PELAN) */
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: floating 4s ease-in-out infinite;
+}
+
+/* ANIMATED GLOW BORDER */
+@keyframes glowBorder {
+  0% { box-shadow: 0 0 20px rgba(99,102,241,0.25); }
+  50% { box-shadow: 0 0 35px rgba(56,189,248,0.45); }
+  100% { box-shadow: 0 0 20px rgba(99,102,241,0.25); }
+}
+
+.glow-animate {
+  animation: glowBorder 3.5s ease-in-out infinite;
+}
+
+/* PARALLAX FOLLOW MOUSE */
+.parallax {
+  transition: transform 0.15s ease-out;
+}
