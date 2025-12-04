@@ -197,10 +197,8 @@ export default function HomePage() {
             <h3 className="text-lg font-semibold mb-4 text-slate-100">Education</h3>
 
             <div className="space-y-4">
-              <JourneyCard title="UI Design Training" subtitle="Alura" date="Des 2023" />
-              <JourneyCard title="Web Accessibility Training" subtitle="Alura" date="Apr 2023" />
-              <JourneyCard title="Front-end Training" subtitle="Alura" date="Mar 2023" />
-              <JourneyCard title="Computer Science Degree" subtitle="Nama Kampus" date="2019 - 2023" />
+              <JourneyCard title="Cloud and Gen AI Machine Learning Track" subtitle="Program Kampus Merdeka – CendekiAwan by RevoU" date="Ags 2024 - Des 2024" />
+              <JourneyCard title="Teknik Informatika" subtitle="Universitas Indraprasta PGRI" date="2021 - 2025" />
             </div>
           </div>
 
@@ -209,9 +207,8 @@ export default function HomePage() {
             <h3 className="text-lg font-semibold mb-4 text-slate-100">Professional Experience</h3>
 
             <div className="space-y-4">
-              <JourneyCard title="Software Developer" subtitle="Perusahaan A" date="Mar 2022 - Apr 2023" />
-              <JourneyCard title="Web Developer" subtitle="Perusahaan B" date="Sep 2021 - Nov 2021" />
-              <JourneyCard title="Freelancer" subtitle="Focus Digital Marketing" date="Apr 2021 - Sekarang" />
+              <JourneyCard title="Helper retur" subtitle="PT. Sumber Alfaria Trijaya, Tbk" date="Sep 2020 - Sep 2021" />
+              <JourneyCard title="Asisten Lapangan (Field Assistant)" subtitle="PT Fajar Surya Wisesa Tbk. Jakarta." date="Jun 2022 - Ags 2022" />
             </div>
           </div>
 
