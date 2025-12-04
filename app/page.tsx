@@ -53,7 +53,7 @@ export default function HomePage() {
           </h1>
 
           <p className="mt-4 text-lg text-slate-300 max-w-xl mx-auto">
-            Frontend Developer specializing in modern UI, Next.js, and smooth digital experiences.
+           Mobile & Web Developer | Clean UI, Solid Code
           </p>
 
           <div className="mt-10 flex justify-center gap-4">
@@ -91,12 +91,12 @@ export default function HomePage() {
               <p className="text-indigo-300 text-sm mt-1">Available for work</p>
 
               <p className="mt-4 font-medium text-slate-300">
-                Frontend Developer — Next.js, React, Tailwind CSS
+                Mobile & Web Developer | Clean UI, Solid Code
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
-                <Info label="Experience" value="3+ yrs" color="text-indigo-300" />
-                <Info label="Projects" value="50+" color="text-sky-300" />
+                <Info label="Experience" value="1 yrs" color="text-indigo-300" />
+                <Info label="Projects" value="10+" color="text-sky-300" />
                 <Info label="Location" value="Indonesia" color="text-slate-200" />
                 <Info label="Status" value="Open" color="text-emerald-300" />
               </div>
@@ -140,48 +140,58 @@ export default function HomePage() {
 </section>
 
 
-      {/* ========================= SKILLS ========================= */}
-      <section id= "Skills" className="py-24 px-6 max-w-6xl mx-auto relative">
-        <div className="absolute inset-0 -z-10 blur-[120px] opacity-25 
-                        bg-gradient-to-br from-indigo-400/20 via-purple-400/20 to-sky-400/20" />
 
-        <h2 className="text-4xl font-extrabold text-center mb-14 
-                       bg-gradient-to-r from-indigo-300 to-purple-300 
-                       text-transparent bg-clip-text">
-          Skills
-        </h2>
+{/* KEMAMPUAN TEKNIS */}
+<section id="skills" className="py-24 px-6 max-w-6xl mx-auto">
+  <h2 className="text-3xl md:text-4xl font-semibold text-center mb-3">
+    Kemampuan <span className="text-indigo-400">Teknis</span>
+  </h2>
+  <p className="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
+    Ringkasan kemampuan teknis, tools, serta soft-skill yang mendukung pekerjaan saya.
+  </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
-          {[
-            { name: "HTML", icon: "🌐" },
-            { name: "CSS", icon: "🎨" },
-            { name: "JavaScript", icon: "⚡" },
-            { name: "TypeScript", icon: "🔷" },
-            { name: "React", icon: "⚛️" },
-            { name: "Next.js", icon: "▲" },
-            { name: "Tailwind CSS", icon: "💨" },
-            { name: "Git", icon: "🔧" },
-            { name: "UI/UX", icon: "🧩" },
-            { name: "Figma", icon: "✏️" },
-          ].map((skill, i) => (
-            <div
-              key={i}
-              className="group p-6 flex flex-col items-center justify-center gap-3
-              rounded-2xl border border-white/5 bg-white/[0.04]
-              backdrop-blur-xl shadow-[0_0_20px_-10px_rgba(255,255,255,0.12)]
-              hover:shadow-[0_0_30px_-8px_rgba(170,200,255,0.25)]
-              transition-all duration-300 hover:-translate-y-1.5"
-            >
-              <span className="text-4xl opacity-90 group-hover:scale-110 transition">
-                {skill.icon}
-              </span>
-              <p className="font-semibold text-slate-200 tracking-wide group-hover:text-indigo-300 transition">
-                {skill.name}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+    {[
+      { name: "Windows & Linux Setup", icon: "🖥️" },
+      { name: "Hardware & Software Troubleshooting", icon: "🛠️" },
+      { name: "Networking (Basic)", icon: "🌐" },
+      { name: "Database: MySQL", icon: "🗄️" },
+      { name: "Firebase Firestore", icon: "🔥" },
+      { name: "Supabase", icon: "⚡" },
+      { name: "Flutter (Android Apps)", icon: "📱" },
+      { name: "Python (Automation/Data)", icon: "🐍" },
+      { name: "Java Desktop (Swing/NetBeans)", icon: "☕" },
+      { name: "Web Basic (HTML, CSS)", icon: "🧱" },
+      { name: "Cloud: AWS / Firebase / Supabase", icon: "☁️" },
+      { name: "CI/CD + API Integration", icon: "🔁" },
+      { name: "Git Version Control", icon: "🌿" },
+      { name: "Data Viz (Matplotlib/Seaborn)", icon: "📊" },
+      { name: "Microsoft Office", icon: "📑" },
+      { name: "PHP", icon: "🐘" },
+      { name: "REST API", icon: "🔌" }
+
+    ].map((skill, i) => (
+      <div
+        key={i}
+        className="
+          bg-slate-900/70 backdrop-blur-xl
+          border border-slate-800
+          rounded-2xl p-5
+          hover:-translate-y-1
+          hover:shadow-[0_0_35px_-12px_rgba(56,189,248,0.35)]
+          transition
+        "
+      >
+        <div className="text-2xl">{skill.icon}</div>
+        <p className="mt-3 text-sm font-semibold text-slate-100 leading-snug">
+          {skill.name}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
+
+
 
       {/* JOURNEY */}
       <section id="Journey" className="py-20 px-6 max-w-6xl mx-auto">
